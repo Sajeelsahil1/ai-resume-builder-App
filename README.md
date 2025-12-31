@@ -1,167 +1,28 @@
-# AI Resume Builder
-
-A modern **AI-powered Resume / CV Builder** built with **Flutter**, **Firebase**, and **Google Generative AI (Gemini)**.  
-Create, manage, customize, and export professional resumes as **high-quality PDFs** using multiple templates and real-time cloud storage.
-
----
-
-## 🚀 Features
-
-- Create and manage multiple resumes
-- 6 professionally designed resume templates
-- AI-powered content generation (summary & cover letter)
-- Resume strength score (0–100%)
-- Custom resume sections (Projects, Achievements, etc.)
-- Real-time auto-save with Firestore
-- Anonymous authentication (no signup required)
-- PDF export with print support
-- QR code for portfolio links
-- Duplicate and delete resumes
-- Responsive UI (Mobile & Web)
-
----
-
-## 🎨 Available Templates
-
-- Modern Blue  
-- Classic Green  
-- Professional Red  
-- Elegant Orange  
-- Creative Violet  
-- Clean Grey  
-
-Each template supports:
-- Sidebar or header layouts
-- Dynamic colors
-- Automatic content scaling
-
----
-
-## 🛠 Tech Stack
-
-- **Flutter (Dart)**
-- **Firebase Authentication**
-- **Cloud Firestore**
-- **Google Generative AI (Gemini)**
-- **Provider (State Management)**
-- **PDF & Printing**
-- **Shared Preferences**
-- **Google Fonts**
-
----
-
-yaml
----
-
-## ⚙️ Setup & Installation
-
-### Prerequisites
-- Flutter SDK (latest stable)
-- Firebase project
-- Google Gemini API key
-
-### Clone Repository
-
-```bash
-git clone https://github.com/your-username/ai-resume-builder.git
-cd airesumebuilder
-
-Install Dependencies
-flutter pub get
-
-🔥 Firebase Configuration
-
-Create a Firebase project
-
-Enable:
-
-Authentication → Anonymous
-
-Cloud Firestore
-
-Add Firebase config files:
-
-Android: google-services.json
-
-iOS: GoogleService-Info.plist
-
-Web: FirebaseOptions (already wired in main.dart)
-
-🤖 AI Configuration
-
-Add your Gemini API key:
-
-const String kGeminiApiKey = "YOUR_GEMINI_API_KEY";
-
-
-⚠️ Do not expose production API keys in public repositories.
-
-▶️ Run the App
-flutter run
-
-
-For web:
-
-flutter run -d chrome
-
-🔐 Authentication
-
-Uses Firebase Anonymous Authentication
-
-Each user has isolated cloud data
-
-Resumes stored per user securely in Firestore
-
-📊 Resume Scoring
-
-Resume completeness is automatically evaluated based on:
-
-Personal information
-
-Summary and objective
-
-Experience and education
-
-Skills and languages
-
-Portfolio and references
-
-Score range: 0 – 100%
-
-📄 PDF Export
-
-High-quality A4 PDF output
-
-Multiple layout styles
-
-Color-based themes
-
-QR code support
-
-Print & share ready
-
-🌍 Platform Support
-
-Android ✅
-
-iOS ✅
-
-Web ✅
-
-Desktop ⚠️ (Experimental)
-
-📌 Roadmap
-
-Email / Google authentication
-
-AI resume optimization per job role
-
-Shareable resume links
-
-DOCX export
-
-Advanced analytics
-
-📜 License
-
-MIT License
+# AI Resume Builder (UI Demo)
+
+This is a **demonstration version** of a production Flutter application built for generating professional resumes using AI.
+
+## ⚠️ Disclaimer
+**This repository contains the Frontend UI and Logic structure only.**
+To protect Intellectual Property and security:
+* **Backend Removed:** Firebase Auth and Firestore implementations have been replaced with an in-memory mock database.
+* **AI Logic Removed:** The Google Gemini API integration has been replaced with a mock service that simulates AI responses.
+* **API Keys Removed:** No production keys are included.
+
+## Features Showcase
+* **State Management:** Built using `Provider` for efficient state handling.
+* **PDF Generation:** distinct resume templates generated using the `pdf` and `printing` packages.
+* **Dynamic Forms:** Modular UI for handling complex user input (Experience, Education, Skills).
+* **Mock AI Integration:** Demonstrates how async AI operations are handled in the UI (loading states, error handling).
+
+## How to Run
+1.  Clone the repository.
+2.  Run `flutter pub get`.
+3.  Run `flutter run`.
+    * *Note: Data will not persist after restarting the app as it uses local memory for this demo.*
+
+## Tech Stack (Production Version)
+* **Framework:** Flutter
+* **Backend:** Firebase (Auth, Firestore)
+* **AI:** Google Gemini (Generative AI)
+* **PDF:** pdf package
