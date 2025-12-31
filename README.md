@@ -64,7 +64,7 @@ yaml
 
 ```bash
 git clone https://github.com/your-username/ai-resume-builder.git
-cd ai-resume-builder
+cd airesumebuilder
 
 Install Dependencies
 flutter pub get
