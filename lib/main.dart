@@ -20,7 +20,7 @@ import 'package:percent_indicator/percent_indicator.dart';
 // 1. CONFIGURATION
 // ---------------------------------------------------------------------------
 
-const String kGeminiApiKey = "AIzaSyClUV4Xk09THUJhPeRmog1r0nQa-S-Lwsg";
+const String kGeminiApiKey = "";
 
 // ---------------------------------------------------------------------------
 // 2. DATA MODELS
